@@ -1,0 +1,14 @@
+{
+  "name": "nodetutorial",
+  "version": "1.0.0",
+  "description": "this is the node js practice phase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sukalyan Adhikary",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^10.0.0"
+  }
+}
