@@ -16,13 +16,16 @@ const server=http.createServer((req,res)=>{
         res.end('this is the contact page')
     }
 
-    else if(req.url=='/userapi'){
+    else if(req.url=='/api'){
        fs.readFile(`${__dirname}/uerApi/userapi.json`,'utf-8',(err,data)=>{
         console.log(data);
         console.log(__dirname);
         objdata=JSON.parse(data)
-        res.end(objdata)
-       })
+        res.writeHead(200,{'content-type':'application/json'})
+        res.end(data)
+      
+ 
+       });
       
     }
 
@@ -32,6 +35,6 @@ const server=http.createServer((req,res)=>{
     }
 });
 
-server.listen(800,'localhost',()=>{
+server.listen(8000,'localhost',()=>{
  console.log('listining on the port 8000');
 })
