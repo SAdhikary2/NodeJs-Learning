@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    width: 30vw;
+    height: 80vh;
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 5vh;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(174, 167, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    background: url('/Weather Application/bac.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+.fa-sun{
+    font-size: 7vw;
+
+}
+
+ p{
+    font-size: 1.5vw;
+}
+
+ #weathericon{
+animation: fas-anime 3s linear infinite alternate;
+ }
+
+ @keyframes fas-anime {
+    from{
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(1.7);
+    }
+    
+ }

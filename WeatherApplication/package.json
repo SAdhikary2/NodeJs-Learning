@@ -1,0 +1,14 @@
+{
+  "name": "weatherapplication",
+  "version": "1.0.0",
+  "description": "this is a weather application using html css javascript and nodejs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sukalyan Adhikary",
+  "license": "ISC",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
